@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */; };
+		A3FD755E1FC6949400CAA4A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755D1FC6949400CAA4A6 /* ViewController.swift */; };
+		A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD755F1FC6949400CAA4A6 /* Main.storyboard */; };
+		A3FD75641FC6949400CAA4A6 /* AstroAssignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3FD75621FC6949400CAA4A6 /* AstroAssignment.xcdatamodeld */; };
+		A3FD75661FC6949400CAA4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FD75651FC6949400CAA4A6 /* Assets.xcassets */; };
+		A3FD75691FC6949400CAA4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */; };
+		A3FD75741FC6949400CAA4A6 /* AstroAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */; };
+		A3FD757F1FC6949400CAA4A6 /* AstroAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3FD75701FC6949400CAA4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD75501FC6949400CAA4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FD75571FC6949400CAA4A6;
+			remoteInfo = AstroAssignment;
+		};
+		A3FD757B1FC6949400CAA4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD75501FC6949400CAA4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FD75571FC6949400CAA4A6;
+			remoteInfo = AstroAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3FD755D1FC6949400CAA4A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3FD75601FC6949400CAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3FD75631FC6949400CAA4A6 /* AstroAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AstroAssignment.xcdatamodel; sourceTree = "<group>"; };
+		A3FD75651FC6949400CAA4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3FD75681FC6949400CAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3FD756A1FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAssignmentTests.swift; sourceTree = "<group>"; };
+		A3FD75751FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAssignmentUITests.swift; sourceTree = "<group>"; };
+		A3FD75801FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FD75551FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756C1FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75771FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3FD754F1FC6949400CAA4A6 = {
+			isa = PBXGroup;
+			children = (
+				A3FD755A1FC6949400CAA4A6 /* AstroAssignment */,
+				A3FD75721FC6949400CAA4A6 /* AstroAssignmentTests */,
+				A3FD757D1FC6949400CAA4A6 /* AstroAssignmentUITests */,
+				A3FD75591FC6949400CAA4A6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FD75591FC6949400CAA4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */,
+				A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */,
+				A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FD755A1FC6949400CAA4A6 /* AstroAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */,
+				A3FD755D1FC6949400CAA4A6 /* ViewController.swift */,
+				A3FD755F1FC6949400CAA4A6 /* Main.storyboard */,
+				A3FD75651FC6949400CAA4A6 /* Assets.xcassets */,
+				A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */,
+				A3FD756A1FC6949400CAA4A6 /* Info.plist */,
+				A3FD75621FC6949400CAA4A6 /* AstroAssignment.xcdatamodeld */,
+			);
+			path = AstroAssignment;
+			sourceTree = "<group>";
+		};
+		A3FD75721FC6949400CAA4A6 /* AstroAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */,
+				A3FD75751FC6949400CAA4A6 /* Info.plist */,
+			);
+			path = AstroAssignmentTests;
+			sourceTree = "<group>";
+		};
+		A3FD757D1FC6949400CAA4A6 /* AstroAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */,
+				A3FD75801FC6949400CAA4A6 /* Info.plist */,
+			);
+			path = AstroAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3FD75571FC6949400CAA4A6 /* AstroAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75831FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignment" */;
+			buildPhases = (
+				A3FD75541FC6949400CAA4A6 /* Sources */,
+				A3FD75551FC6949400CAA4A6 /* Frameworks */,
+				A3FD75561FC6949400CAA4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroAssignment;
+			productName = AstroAssignment;
+			productReference = A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3FD756E1FC6949400CAA4A6 /* AstroAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75861FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentTests" */;
+			buildPhases = (
+				A3FD756B1FC6949400CAA4A6 /* Sources */,
+				A3FD756C1FC6949400CAA4A6 /* Frameworks */,
+				A3FD756D1FC6949400CAA4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FD75711FC6949400CAA4A6 /* PBXTargetDependency */,
+			);
+			name = AstroAssignmentTests;
+			productName = AstroAssignmentTests;
+			productReference = A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3FD75791FC6949400CAA4A6 /* AstroAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75891FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentUITests" */;
+			buildPhases = (
+				A3FD75761FC6949400CAA4A6 /* Sources */,
+				A3FD75771FC6949400CAA4A6 /* Frameworks */,
+				A3FD75781FC6949400CAA4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FD757C1FC6949400CAA4A6 /* PBXTargetDependency */,
+			);
+			name = AstroAssignmentUITests;
+			productName = AstroAssignmentUITests;
+			productReference = A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FD75501FC6949400CAA4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Farooque;
+				TargetAttributes = {
+					A3FD75571FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					A3FD756E1FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3FD75571FC6949400CAA4A6;
+					};
+					A3FD75791FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3FD75571FC6949400CAA4A6;
+					};
+				};
+			};
+			buildConfigurationList = A3FD75531FC6949400CAA4A6 /* Build configuration list for PBXProject "AstroAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3FD754F1FC6949400CAA4A6;
+			productRefGroup = A3FD75591FC6949400CAA4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FD75571FC6949400CAA4A6 /* AstroAssignment */,
+				A3FD756E1FC6949400CAA4A6 /* AstroAssignmentTests */,
+				A3FD75791FC6949400CAA4A6 /* AstroAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3FD75561FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD75691FC6949400CAA4A6 /* LaunchScreen.storyboard in Resources */,
+				A3FD75661FC6949400CAA4A6 /* Assets.xcassets in Resources */,
+				A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756D1FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75781FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FD75541FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD75641FC6949400CAA4A6 /* AstroAssignment.xcdatamodeld in Sources */,
+				A3FD755E1FC6949400CAA4A6 /* ViewController.swift in Sources */,
+				A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756B1FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD75741FC6949400CAA4A6 /* AstroAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75761FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD757F1FC6949400CAA4A6 /* AstroAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3FD75711FC6949400CAA4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FD75571FC6949400CAA4A6 /* AstroAssignment */;
+			targetProxy = A3FD75701FC6949400CAA4A6 /* PBXContainerItemProxy */;
+		};
+		A3FD757C1FC6949400CAA4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FD75571FC6949400CAA4A6 /* AstroAssignment */;
+			targetProxy = A3FD757B1FC6949400CAA4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3FD755F1FC6949400CAA4A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FD75601FC6949400CAA4A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FD75681FC6949400CAA4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3FD75811FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3FD75821FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FD75841FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A3FD75851FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A3FD75871FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment";
+			};
+			name = Debug;
+		};
+		A3FD75881FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment";
+			};
+			name = Release;
+		};
+		A3FD758A1FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AstroAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AstroAssignment;
+			};
+			name = Debug;
+		};
+		A3FD758B1FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AstroAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AstroAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FD75531FC6949400CAA4A6 /* Build configuration list for PBXProject "AstroAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75811FC6949400CAA4A6 /* Debug */,
+				A3FD75821FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FD75831FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75841FC6949400CAA4A6 /* Debug */,
+				A3FD75851FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3FD75861FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75871FC6949400CAA4A6 /* Debug */,
+				A3FD75881FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3FD75891FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD758A1FC6949400CAA4A6 /* Debug */,
+				A3FD758B1FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3FD75621FC6949400CAA4A6 /* AstroAssignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3FD75631FC6949400CAA4A6 /* AstroAssignment.xcdatamodel */,
+			);
+			currentVersion = A3FD75631FC6949400CAA4A6 /* AstroAssignment.xcdatamodel */;
+			path = AstroAssignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3FD75501FC6949400CAA4A6 /* Project object */;
+}
