@@ -32,6 +32,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         for index in 0...channelFavouritedList.count-1 {
             let favouritedSection = channelFavouritedList[index]
             let ind = favouritedSection.value(forKeyPath: "index") as? Int
+            
             if (favouriteButton.tag == ind!){
             favouriteButton.setImage(UIImage(named: "track"), for: UIControlState.normal)
                 break
