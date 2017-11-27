@@ -1,5 +1,5 @@
 //
-//  EventGridFlowLayout.swift
+//  EventListFlowLayout.swift
 //  EventTracker
 //
 //  Created by Farooque on 02/04/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventGridFlowLayout: UICollectionViewFlowLayout {
+class AstroListFlowLayout: UICollectionViewFlowLayout {
     let itemHeight: CGFloat = 150
     override init() {
         super.init()
@@ -19,19 +19,19 @@ class EventGridFlowLayout: UICollectionViewFlowLayout {
         setupLayout()
     }
     func setupLayout() {
-        minimumInteritemSpacing = 1
+        minimumInteritemSpacing = 0
         minimumLineSpacing = 1
         scrollDirection = .vertical
     }
     func itemWidth() -> CGFloat {
-        return (collectionView!.frame.width/2)-1
+        return collectionView!.frame.width
     }
     override var itemSize: CGSize {
         set {
-            self.itemSize = CGSize(width :itemWidth(),height : itemHeight)
+            self.itemSize = CGSize(width :itemWidth(), height:itemHeight)
         }
         get {
-            return CGSize(width :itemWidth(),height : itemHeight)
+            return CGSize(width:itemWidth(), height:itemHeight)
         }
     }
     override func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {

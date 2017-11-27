@@ -36,6 +36,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         if channelFavouritedList.count > 0 {
         for index in 0...channelFavouritedList.count-1 {
             let favouritedSection = channelFavouritedList[index]
+            let ind = favouritedSection.value(forKeyPath: "index") as? Int
             let channelTittle = favouritedSection.value(forKeyPath: "channelTittle") as? String
             let channelId = favouritedSection.value(forKeyPath: "channelId") as? Int
             
@@ -108,7 +109,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func removeChannelList(model : AstroChannelListModel){
+     func removeChannelList(model : AstroChannelListModel){
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return
         }

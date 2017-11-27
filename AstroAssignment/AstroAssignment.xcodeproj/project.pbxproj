@@ -16,10 +16,11 @@
 		A335829D1FC72C7600351795 /* AstroConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335829C1FC72C7600351795 /* AstroConstant.swift */; };
 		A335829F1FC72CD000351795 /* AstroUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335829E1FC72CD000351795 /* AstroUtility.swift */; };
 		A33582A51FC72EBD00351795 /* AstroAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A41FC72EBD00351795 /* AstroAPIManager.swift */; };
-		A33582A71FC758AA00351795 /* EventGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */; };
-		A33582A91FC758D000351795 /* EventListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A81FC758D000351795 /* EventListFlowLayout.swift */; };
+		A33582A71FC758AA00351795 /* AstroGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A61FC758AA00351795 /* AstroGridFlowLayout.swift */; };
+		A33582A91FC758D000351795 /* AstroListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A81FC758D000351795 /* AstroListFlowLayout.swift */; };
 		A342EAA41FCC1047005D962F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A342EAA31FCC1047005D962F /* Login.storyboard */; };
 		A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */; };
+		A342EAA91FCC6EE6005D962F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342EAA81FCC6EE6005D962F /* UIView.swift */; };
 		A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */; };
 		A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */; };
 		A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD755F1FC6949400CAA4A6 /* Main.storyboard */; };
@@ -58,10 +59,11 @@
 		A335829C1FC72C7600351795 /* AstroConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroConstant.swift; sourceTree = "<group>"; };
 		A335829E1FC72CD000351795 /* AstroUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroUtility.swift; sourceTree = "<group>"; };
 		A33582A41FC72EBD00351795 /* AstroAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroAPIManager.swift; sourceTree = "<group>"; };
-		A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventGridFlowLayout.swift; sourceTree = "<group>"; };
-		A33582A81FC758D000351795 /* EventListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListFlowLayout.swift; sourceTree = "<group>"; };
+		A33582A61FC758AA00351795 /* AstroGridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroGridFlowLayout.swift; sourceTree = "<group>"; };
+		A33582A81FC758D000351795 /* AstroListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroListFlowLayout.swift; sourceTree = "<group>"; };
 		A342EAA31FCC1047005D962F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFBLoginViewController.swift; sourceTree = "<group>"; };
+		A342EAA81FCC6EE6005D962F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroChannelVC.swift; sourceTree = "<group>"; };
@@ -147,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				A33582921FC72A1300351795 /* AstroChannelListCollectionViewCell.swift */,
+				A33582A81FC758D000351795 /* AstroListFlowLayout.swift */,
+				A33582A61FC758AA00351795 /* AstroGridFlowLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -154,9 +158,9 @@
 		A33582941FC72A3400351795 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A342EAA11FCC1019005D962F /* Login */,
 				A33582A31FC72EA700351795 /* AstroAPIManager */,
 				A335828C1FC728B400351795 /* AppDelegate */,
+				A342EAA11FCC1019005D962F /* Login */,
 				A33582951FC72A7200351795 /* Root */,
 			);
 			name = Source;
@@ -239,6 +243,14 @@
 			name = StoryBaord;
 			sourceTree = "<group>";
 		};
+		A342EAAA1FCC6FAA005D962F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A342EAA81FCC6EE6005D962F /* UIView.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		A3FD754F1FC6949400CAA4A6 = {
 			isa = PBXGroup;
 			children = (
@@ -264,8 +276,7 @@
 		A3FD755A1FC6949400CAA4A6 /* AstroAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */,
-				A33582A81FC758D000351795 /* EventListFlowLayout.swift */,
+				A342EAAA1FCC6FAA005D962F /* Extension */,
 				A335828B1FC728A000351795 /* StoryBaordHelper */,
 				A33582941FC72A3400351795 /* Source */,
 				A335829B1FC72B8F00351795 /* Utilities */,
@@ -491,16 +502,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33582A91FC758D000351795 /* EventListFlowLayout.swift in Sources */,
+				A33582A91FC758D000351795 /* AstroListFlowLayout.swift in Sources */,
 				A335829F1FC72CD000351795 /* AstroUtility.swift in Sources */,
 				A335829D1FC72C7600351795 /* AstroConstant.swift in Sources */,
 				A33582991FC72B0300351795 /* AstroChannelListModel.swift in Sources */,
 				A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */,
-				A33582A71FC758AA00351795 /* EventGridFlowLayout.swift in Sources */,
+				A33582A71FC758AA00351795 /* AstroGridFlowLayout.swift in Sources */,
 				A335828A1FC7289B00351795 /* StoryboardHelper.swift in Sources */,
 				A33582911FC729D100351795 /* AstroChannelListViewModel.swift in Sources */,
 				A33582931FC72A1300351795 /* AstroChannelListCollectionViewCell.swift in Sources */,
 				A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */,
+				A342EAA91FCC6EE6005D962F /* UIView.swift in Sources */,
 				A33582A51FC72EBD00351795 /* AstroAPIManager.swift in Sources */,
 				A327F2C11FCB27E40062EF6D /* AstroAssignment.xcdatamodel in Sources */,
 				A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */,

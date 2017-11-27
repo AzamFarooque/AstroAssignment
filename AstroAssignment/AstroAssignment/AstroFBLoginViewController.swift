@@ -48,35 +48,22 @@ class AstroFBLoginViewController: UIViewController {
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-                    //print(result!)
-                    print(self.dict)
-                    
+               self.dict = result as! [String : AnyObject]
                let id = self.dict["id"] as! String
+               let name = self.dict["name"] as! String
                UserDefaults.standard.set(id, forKey: "id")
+               UserDefaults.standard.set(name, forKey: "name")
                 }
             })
         }
     }
 
     @IBAction func didTapSkipButton(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

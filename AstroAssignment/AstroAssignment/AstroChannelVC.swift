@@ -8,23 +8,27 @@
 
 import UIKit
 import CoreData
+import FacebookLogin
+import FBSDKLoginKit
 
-class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,AstroChannelListCellDelegate,UITabBarDelegate {
+
+class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,AstroChannelListCellDelegate {
     
+    @IBOutlet weak var profileNameLabel: UILabel!
+    @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var listButton: UIButton!
+    @IBOutlet weak var gridButton: UIButton!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     var navController : UINavigationController!
     let channelList : AstroChannelListViewModel = AstroChannelListViewModel()
     var channelListArray :  [AstroChannelListModel] = []
-    var sortedArray : [AstroChannelListModel] = []
-    var channelTittleArray : [String] = []
-    
     @IBOutlet weak var headerView: UIView!
-    let gridFlowLayout = EventGridFlowLayout()
-    let listFlowLayout = EventListFlowLayout()
+    let gridFlowLayout = AstroGridFlowLayout()
+    let listFlowLayout = AstroListFlowLayout()
     var isGridFlowLayoutUsed: Bool = false
-    var temp : AstroChannelListModel!
-    
     @IBOutlet weak var collectionView: UICollectionView!
+    let reuseidentifer = "AstroChannelListCollectionViewCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetcData(sort: "SortChannelID")
@@ -33,23 +37,29 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
      
     }
     
-    
-    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDefaults.standard.value(forKey: "id") != nil{
+            profileNameLabel.isHidden = false
+            logoutButton.isHidden = false
+            let name = UserDefaults.standard.value(forKey: "name")
+            profileNameLabel.text = name! as? String
+        }
+        else{
+            profileNameLabel.isHidden = true
+            logoutButton.isHidden = true
+        }
+
     }
-    
+       
     @IBAction func changeSegmentIndex(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-//            isGridFlowLayoutUsed = true
-//            collectionView.collectionViewLayout = gridFlowLayout
             channelList.dataSource.removeAll()
             channelList.channelTittleArray.removeAll()
             fetcData(sort: "SortChannelID")
            
         }
         if sender.selectedSegmentIndex == 1{
-//            isGridFlowLayoutUsed = false
-//            collectionView.collectionViewLayout = listFlowLayout
+
             channelList.dataSource.removeAll()
             fetcData(sort: "SortChannelAlphabet")
         }
@@ -92,23 +102,19 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         
          func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AstroChannelListCollectionViewCell", for: indexPath) as! AstroChannelListCollectionViewCell
-            
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseidentifer, for: indexPath) as! AstroChannelListCollectionViewCell
          let section = self.channelListArray[indexPath.row] as AstroChannelListModel!
             cell.addShadow()
             cell.backgroundColor = UIColor.white
             cell.favouriteButton.tag = indexPath.row
             cell.update(model : section! , buttonTag : indexPath.row)
             cell.delegate = self
-            if cell.channelListArray.count == 0 {
             cell.channelListArray = channelList.dataSource
-            }
             return cell
         }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        
         return UIEdgeInsetsMake(2, 0, 0, 0)
     }
     
@@ -124,38 +130,39 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         
     }
 
-
-}
-extension UIView{
-func showLoadingIndicator() {
-    let activityIndicator = UIActivityIndicatorView.init(activityIndicatorStyle: .white)
-    
-    if let _ = self.viewWithTag(200) as? UIActivityIndicatorView {
-        
-    } else {
-        activityIndicator.center = self.center
-        activityIndicator.color = UIColor.red
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.tag = 200
-        self.addSubview(activityIndicator)
+    @IBAction func didTapGridLayout(_ sender: UIButton) {
+        gridButton.setImage(UIImage(named: "selectedGrid"), for: UIControlState.normal)
+        listButton.setImage(UIImage(named: "unselectedList"), for: UIControlState.normal)
+        isGridFlowLayoutUsed = true
+        collectionView.collectionViewLayout = gridFlowLayout
     }
-    activityIndicator.startAnimating()
-}
-    func hideLoadingIndicator() {
-        if let activityIndicator = self.viewWithTag(200) as? UIActivityIndicatorView {
-            activityIndicator.stopAnimating()
-            activityIndicator.removeFromSuperview()
-        }
+    
+    
+    @IBAction func didTapListLAyout(_ sender: UIButton) {
+        gridButton.setImage(UIImage(named: "unselectedGrid"), for: UIControlState.normal)
+        listButton.setImage(UIImage(named: "selectedList"), for: UIControlState.normal)
+        isGridFlowLayoutUsed = false
+        collectionView.collectionViewLayout = listFlowLayout
     }
 
+    @IBAction func didTapLogoutButton(_ sender: Any) {
+        confirmLogout()
+           }
     
-    func addShadow(){
-        self.layer.shadowRadius = 2
-        self.layer.shadowOpacity = 0.2
-        self.layer.masksToBounds = false
-        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+    func confirmLogout(){
+        let alertController: UIAlertController = UIAlertController(title: "Astro", message:"Are you sure you want to logout", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+            self.logout()
+        }))
+        self.present(alertController, animated: true, completion: nil)
     }
-
     
+    func logout(){
+        UserDefaults.standard.removeObject(forKey: "id")
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        logoutButton.isHidden = true
+        profileNameLabel.isHidden = true
+    }
 }
-
