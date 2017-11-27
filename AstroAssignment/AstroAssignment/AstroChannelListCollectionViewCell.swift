@@ -9,14 +9,19 @@
 import UIKit
 import CoreData
 
+protocol AstroChannelListCellDelegate : class {
+    func presentLoginController()
+}
+
 class AstroChannelListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var channelTittle: UILabel!
     @IBOutlet weak var channelStbNumber: UILabel!
     @IBOutlet weak var favouriteButton: UIButton!
     var channelListArray :  [AstroChannelListModel] = []
     var channelFavouritedList: [NSManagedObject] = []
-    var isTrune : Bool = false
     
+    weak var delegate : AstroChannelListCellDelegate?
+
    
     func update(model : AstroChannelListModel , buttonTag : Int){
         fetchFavouritedChannelList()
@@ -48,14 +53,17 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
     
     @IBAction func didTapFavouriteButton(_ sender: UIButton) {
         
-    if sender.currentImage!.isEqual(UIImage(named: "unTracked")){
-          saveChannelList(model: channelListArray[sender.tag] , Index: sender.tag)
-          sender.setImage(UIImage(named: "track"), for: UIControlState.normal)
-        }
-    else{
-        removeChannelList(model: channelListArray[sender.tag])
-        sender.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
-        }
+        
+        delegate?.presentLoginController()
+        
+//    if sender.currentImage!.isEqual(UIImage(named: "unTracked")){
+//          saveChannelList(model: channelListArray[sender.tag] , Index: sender.tag)
+//          sender.setImage(UIImage(named: "track"), for: UIControlState.normal)
+//        }
+//    else{
+//        removeChannelList(model: channelListArray[sender.tag])
+//        sender.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
+//        }
     }
     
     func saveChannelList(model : AstroChannelListModel , Index : Int ){

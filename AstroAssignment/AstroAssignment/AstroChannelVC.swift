@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,AstroChannelListCellDelegate {
     
-    
+    var navController : UINavigationController!
     let channelList : AstroChannelListViewModel = AstroChannelListViewModel()
     var channelListArray :  [AstroChannelListModel] = []
     var sortedArray : [AstroChannelListModel] = []
@@ -164,6 +164,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             cell.backgroundColor = UIColor.white
             cell.favouriteButton.tag = indexPath.row
             cell.update(model : section! , buttonTag : indexPath.row)
+            cell.delegate = self
             if cell.channelListArray.count == 0 {
             cell.channelListArray = channelList.dataSource
             }
@@ -174,6 +175,18 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         
         return UIEdgeInsetsMake(-63, 0, 0, 0)
+    }
+    
+    func presentLoginController(){
+        
+                let storyboard = UIStoryboard(storyboard: .Login)
+                let subsectionVC : AstroFBLoginViewController = storyboard.instantiateViewController()
+                navController = UINavigationController(rootViewController: subsectionVC) // Creating a
+                navController.isNavigationBarHidden = true
+                self.present(navController, animated:true, completion: nil)
+        
+        
+
     }
 
     

@@ -1,1569 +1,782 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0CD985D1BE77B17D4351778B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-AstroAssignment.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1AC279E4F78FE8F54F0586F1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>49A52D2EE5F0A226C7CC3613</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_AstroAssignment.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6AF4558BA69073B5EF047494</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>75D1AF2DBB8B79CF17839DBC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>49A52D2EE5F0A226C7CC3613</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>94BFCF962409A48EFAC7E70E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-AstroAssignment.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A6F2B0082854F07A73B89B7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49A52D2EE5F0A226C7CC3613</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A327F2C01FCB27E40062EF6D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>AstroAssignment.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A327F2C11FCB27E40062EF6D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A327F2C01FCB27E40062EF6D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582891FC7289B00351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StoryboardHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335828A1FC7289B00351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582891FC7289B00351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A335828B1FC728A000351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582891FC7289B00351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>StoryBaordHelper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335828C1FC728B400351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD755B1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppDelegate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335828D1FC728F700351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD755D1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335828E1FC7292100351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582901FC729D100351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewModel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335828F1FC7293000351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582921FC72A1300351795</string>
-				<string>A3CD6DEE1FC88D7600BFE028</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582901FC729D100351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroChannelListViewModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582911FC729D100351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582901FC729D100351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582921FC72A1300351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroChannelListCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582931FC72A1300351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582921FC72A1300351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582941FC72A3400351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582A31FC72EA700351795</string>
-				<string>A335828C1FC728B400351795</string>
-				<string>A33582951FC72A7200351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Source</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582951FC72A7200351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582961FC72ABB00351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Root</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582961FC72ABB00351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582971FC72AE300351795</string>
-				<string>A335828E1FC7292100351795</string>
-				<string>A335828F1FC7293000351795</string>
-				<string>A335828D1FC728F700351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ChannelList</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582971FC72AE300351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582981FC72B0300351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582981FC72B0300351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroChannelListModel.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582991FC72B0300351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582981FC72B0300351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A335829A1FC72B5D00351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A335829C1FC72C7600351795</string>
-				<string>A335829E1FC72CD000351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Constant</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335829B1FC72B8F00351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A335829A1FC72B5D00351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335829C1FC72C7600351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroConstant.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335829D1FC72C7600351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A335829C1FC72C7600351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A335829E1FC72CD000351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroUtility.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A335829F1FC72CD000351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A335829E1FC72CD000351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582A31FC72EA700351795</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582A41FC72EBD00351795</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AstroAPIManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582A41FC72EBD00351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroAPIManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582A51FC72EBD00351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582A41FC72EBD00351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582A61FC758AA00351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EventGridFlowLayout.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582A71FC758AA00351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582A61FC758AA00351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A33582A81FC758D000351795</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EventListFlowLayout.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A33582A91FC758D000351795</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A33582A81FC758D000351795</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3CD6DEE1FC88D7600BFE028</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroFooterCollectionViewCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3CD6DEF1FC88D7600BFE028</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3CD6DEE1FC88D7600BFE028</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD754F1FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD755A1FC6949400CAA4A6</string>
-				<string>A3FD75721FC6949400CAA4A6</string>
-				<string>A3FD757D1FC6949400CAA4A6</string>
-				<string>A3FD75591FC6949400CAA4A6</string>
-				<string>A7F42A4C0BA78D041AE7DB67</string>
-				<string>75D1AF2DBB8B79CF17839DBC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75501FC6949400CAA4A6</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0830</string>
-				<key>LastUpgradeCheck</key>
-				<string>0830</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Farooque</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>A3FD75571FC6949400CAA4A6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.3.3</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>A3FD756E1FC6949400CAA4A6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.3.3</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>A3FD75571FC6949400CAA4A6</string>
-					</dict>
-					<key>A3FD75791FC6949400CAA4A6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.3.3</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>A3FD75571FC6949400CAA4A6</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>A3FD75531FC6949400CAA4A6</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>A3FD754F1FC6949400CAA4A6</string>
-			<key>productRefGroup</key>
-			<string>A3FD75591FC6949400CAA4A6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>A3FD75571FC6949400CAA4A6</string>
-				<string>A3FD756E1FC6949400CAA4A6</string>
-				<string>A3FD75791FC6949400CAA4A6</string>
-			</array>
-		</dict>
-		<key>A3FD75531FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A3FD75811FC6949400CAA4A6</string>
-				<string>A3FD75821FC6949400CAA4A6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A3FD75541FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A33582A91FC758D000351795</string>
-				<string>A335829F1FC72CD000351795</string>
-				<string>A335829D1FC72C7600351795</string>
-				<string>A33582991FC72B0300351795</string>
-				<string>A3FD755E1FC6949400CAA4A6</string>
-				<string>A33582A71FC758AA00351795</string>
-				<string>A335828A1FC7289B00351795</string>
-				<string>A3CD6DEF1FC88D7600BFE028</string>
-				<string>A33582911FC729D100351795</string>
-				<string>A33582931FC72A1300351795</string>
-				<string>A33582A51FC72EBD00351795</string>
-				<string>A327F2C11FCB27E40062EF6D</string>
-				<string>A3FD755C1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75551FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9A6F2B0082854F07A73B89B7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75561FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A3FD75691FC6949400CAA4A6</string>
-				<string>A3FD75661FC6949400CAA4A6</string>
-				<string>A3FD75611FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75571FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A3FD75831FC6949400CAA4A6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B829FE2EAEE3422090B7ED58</string>
-				<string>A3FD75541FC6949400CAA4A6</string>
-				<string>A3FD75551FC6949400CAA4A6</string>
-				<string>A3FD75561FC6949400CAA4A6</string>
-				<string>6AF4558BA69073B5EF047494</string>
-				<string>1AC279E4F78FE8F54F0586F1</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AstroAssignment</string>
-			<key>productName</key>
-			<string>AstroAssignment</string>
-			<key>productReference</key>
-			<string>A3FD75581FC6949400CAA4A6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>A3FD75581FC6949400CAA4A6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AstroAssignment.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A3FD75591FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD75581FC6949400CAA4A6</string>
-				<string>A3FD756F1FC6949400CAA4A6</string>
-				<string>A3FD757A1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD755A1FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A33582A61FC758AA00351795</string>
-				<string>A33582A81FC758D000351795</string>
-				<string>A335828B1FC728A000351795</string>
-				<string>A33582941FC72A3400351795</string>
-				<string>A335829B1FC72B8F00351795</string>
-				<string>A3FD755F1FC6949400CAA4A6</string>
-				<string>A3FD75651FC6949400CAA4A6</string>
-				<string>A3FD75671FC6949400CAA4A6</string>
-				<string>A3FD756A1FC6949400CAA4A6</string>
-				<string>A327F2C01FCB27E40062EF6D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AstroAssignment</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD755B1FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD755C1FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD755B1FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD755D1FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroChannelVC.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD755E1FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD755D1FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD755F1FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD75601FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75601FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75611FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD755F1FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD75651FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75661FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD75651FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD75671FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD75681FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75681FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75691FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD75671FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD756A1FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD756B1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A3FD75741FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD756C1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD756D1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD756E1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A3FD75861FC6949400CAA4A6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A3FD756B1FC6949400CAA4A6</string>
-				<string>A3FD756C1FC6949400CAA4A6</string>
-				<string>A3FD756D1FC6949400CAA4A6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A3FD75711FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AstroAssignmentTests</string>
-			<key>productName</key>
-			<string>AstroAssignmentTests</string>
-			<key>productReference</key>
-			<string>A3FD756F1FC6949400CAA4A6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>A3FD756F1FC6949400CAA4A6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AstroAssignmentTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A3FD75701FC6949400CAA4A6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>A3FD75501FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A3FD75571FC6949400CAA4A6</string>
-			<key>remoteInfo</key>
-			<string>AstroAssignment</string>
-		</dict>
-		<key>A3FD75711FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>A3FD75571FC6949400CAA4A6</string>
-			<key>targetProxy</key>
-			<string>A3FD75701FC6949400CAA4A6</string>
-		</dict>
-		<key>A3FD75721FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD75731FC6949400CAA4A6</string>
-				<string>A3FD75751FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AstroAssignmentTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75731FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroAssignmentTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75741FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD75731FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD75751FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75761FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>A3FD757F1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75771FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75781FC6949400CAA4A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A3FD75791FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>A3FD75891FC6949400CAA4A6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A3FD75761FC6949400CAA4A6</string>
-				<string>A3FD75771FC6949400CAA4A6</string>
-				<string>A3FD75781FC6949400CAA4A6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>A3FD757C1FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AstroAssignmentUITests</string>
-			<key>productName</key>
-			<string>AstroAssignmentUITests</string>
-			<key>productReference</key>
-			<string>A3FD757A1FC6949400CAA4A6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>A3FD757A1FC6949400CAA4A6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>AstroAssignmentUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A3FD757B1FC6949400CAA4A6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>A3FD75501FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>A3FD75571FC6949400CAA4A6</string>
-			<key>remoteInfo</key>
-			<string>AstroAssignment</string>
-		</dict>
-		<key>A3FD757C1FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>A3FD75571FC6949400CAA4A6</string>
-			<key>targetProxy</key>
-			<string>A3FD757B1FC6949400CAA4A6</string>
-		</dict>
-		<key>A3FD757D1FC6949400CAA4A6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A3FD757E1FC6949400CAA4A6</string>
-				<string>A3FD75801FC6949400CAA4A6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AstroAssignmentUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD757E1FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AstroAssignmentUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD757F1FC6949400CAA4A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3FD757E1FC6949400CAA4A6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3FD75801FC6949400CAA4A6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A3FD75811FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A3FD75821FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A3FD75831FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A3FD75841FC6949400CAA4A6</string>
-				<string>A3FD75851FC6949400CAA4A6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A3FD75841FC6949400CAA4A6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0CD985D1BE77B17D4351778B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignment/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignment</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A3FD75851FC6949400CAA4A6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>94BFCF962409A48EFAC7E70E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignment/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignment</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A3FD75861FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A3FD75871FC6949400CAA4A6</string>
-				<string>A3FD75881FC6949400CAA4A6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A3FD75871FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignmentTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignmentTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A3FD75881FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignmentTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignmentTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A3FD75891FC6949400CAA4A6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A3FD758A1FC6949400CAA4A6</string>
-				<string>A3FD758B1FC6949400CAA4A6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>A3FD758A1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignmentUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignmentUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>AstroAssignment</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>A3FD758B1FC6949400CAA4A6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AstroAssignmentUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Farooque.AstroAssignmentUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>AstroAssignment</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>A7F42A4C0BA78D041AE7DB67</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0CD985D1BE77B17D4351778B</string>
-				<string>94BFCF962409A48EFAC7E70E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B829FE2EAEE3422090B7ED58</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>&#128230; Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>A3FD75501FC6949400CAA4A6</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A6F2B0082854F07A73B89B7 /* Pods_AstroAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A52D2EE5F0A226C7CC3613 /* Pods_AstroAssignment.framework */; };
+		A327F2C11FCB27E40062EF6D /* AstroAssignment.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = A327F2C01FCB27E40062EF6D /* AstroAssignment.xcdatamodel */; };
+		A335828A1FC7289B00351795 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582891FC7289B00351795 /* StoryboardHelper.swift */; };
+		A33582911FC729D100351795 /* AstroChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582901FC729D100351795 /* AstroChannelListViewModel.swift */; };
+		A33582931FC72A1300351795 /* AstroChannelListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582921FC72A1300351795 /* AstroChannelListCollectionViewCell.swift */; };
+		A33582991FC72B0300351795 /* AstroChannelListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582981FC72B0300351795 /* AstroChannelListModel.swift */; };
+		A335829D1FC72C7600351795 /* AstroConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335829C1FC72C7600351795 /* AstroConstant.swift */; };
+		A335829F1FC72CD000351795 /* AstroUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335829E1FC72CD000351795 /* AstroUtility.swift */; };
+		A33582A51FC72EBD00351795 /* AstroAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A41FC72EBD00351795 /* AstroAPIManager.swift */; };
+		A33582A71FC758AA00351795 /* EventGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */; };
+		A33582A91FC758D000351795 /* EventListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A81FC758D000351795 /* EventListFlowLayout.swift */; };
+		A342EAA41FCC1047005D962F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A342EAA31FCC1047005D962F /* Login.storyboard */; };
+		A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */; };
+		A3CD6DEF1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */; };
+		A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */; };
+		A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */; };
+		A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD755F1FC6949400CAA4A6 /* Main.storyboard */; };
+		A3FD75661FC6949400CAA4A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FD75651FC6949400CAA4A6 /* Assets.xcassets */; };
+		A3FD75691FC6949400CAA4A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */; };
+		A3FD75741FC6949400CAA4A6 /* AstroAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */; };
+		A3FD757F1FC6949400CAA4A6 /* AstroAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3FD75701FC6949400CAA4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD75501FC6949400CAA4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FD75571FC6949400CAA4A6;
+			remoteInfo = AstroAssignment;
+		};
+		A3FD757B1FC6949400CAA4A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3FD75501FC6949400CAA4A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3FD75571FC6949400CAA4A6;
+			remoteInfo = AstroAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CD985D1BE77B17D4351778B /* Pods-AstroAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment.debug.xcconfig"; sourceTree = "<group>"; };
+		49A52D2EE5F0A226C7CC3613 /* Pods_AstroAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94BFCF962409A48EFAC7E70E /* Pods-AstroAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		A327F2C01FCB27E40062EF6D /* AstroAssignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AstroAssignment.xcdatamodel; sourceTree = "<group>"; };
+		A33582891FC7289B00351795 /* StoryboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		A33582901FC729D100351795 /* AstroChannelListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroChannelListViewModel.swift; sourceTree = "<group>"; };
+		A33582921FC72A1300351795 /* AstroChannelListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroChannelListCollectionViewCell.swift; sourceTree = "<group>"; };
+		A33582981FC72B0300351795 /* AstroChannelListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroChannelListModel.swift; sourceTree = "<group>"; };
+		A335829C1FC72C7600351795 /* AstroConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroConstant.swift; sourceTree = "<group>"; };
+		A335829E1FC72CD000351795 /* AstroUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroUtility.swift; sourceTree = "<group>"; };
+		A33582A41FC72EBD00351795 /* AstroAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroAPIManager.swift; sourceTree = "<group>"; };
+		A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventGridFlowLayout.swift; sourceTree = "<group>"; };
+		A33582A81FC758D000351795 /* EventListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListFlowLayout.swift; sourceTree = "<group>"; };
+		A342EAA31FCC1047005D962F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFBLoginViewController.swift; sourceTree = "<group>"; };
+		A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFooterCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroChannelVC.swift; sourceTree = "<group>"; };
+		A3FD75601FC6949400CAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3FD75651FC6949400CAA4A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3FD75681FC6949400CAA4A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3FD756A1FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAssignmentTests.swift; sourceTree = "<group>"; };
+		A3FD75751FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroAssignmentUITests.swift; sourceTree = "<group>"; };
+		A3FD75801FC6949400CAA4A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3FD75551FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6F2B0082854F07A73B89B7 /* Pods_AstroAssignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756C1FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75771FC6949400CAA4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75D1AF2DBB8B79CF17839DBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A52D2EE5F0A226C7CC3613 /* Pods_AstroAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A335828B1FC728A000351795 /* StoryBaordHelper */ = {
+			isa = PBXGroup;
+			children = (
+				A33582891FC7289B00351795 /* StoryboardHelper.swift */,
+			);
+			name = StoryBaordHelper;
+			sourceTree = "<group>";
+		};
+		A335828C1FC728B400351795 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A335828D1FC728F700351795 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A335828E1FC7292100351795 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A33582901FC729D100351795 /* AstroChannelListViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A335828F1FC7293000351795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A33582921FC72A1300351795 /* AstroChannelListCollectionViewCell.swift */,
+				A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A33582941FC72A3400351795 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A342EAA11FCC1019005D962F /* Login */,
+				A33582A31FC72EA700351795 /* AstroAPIManager */,
+				A335828C1FC728B400351795 /* AppDelegate */,
+				A33582951FC72A7200351795 /* Root */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A33582951FC72A7200351795 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A33582961FC72ABB00351795 /* ChannelList */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		A33582961FC72ABB00351795 /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+				A33582971FC72AE300351795 /* Model */,
+				A335828E1FC7292100351795 /* ViewModel */,
+				A335828F1FC7293000351795 /* View */,
+				A335828D1FC728F700351795 /* ViewController */,
+			);
+			name = ChannelList;
+			sourceTree = "<group>";
+		};
+		A33582971FC72AE300351795 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A33582981FC72B0300351795 /* AstroChannelListModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A335829A1FC72B5D00351795 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A335829C1FC72C7600351795 /* AstroConstant.swift */,
+				A335829E1FC72CD000351795 /* AstroUtility.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		A335829B1FC72B8F00351795 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A335829A1FC72B5D00351795 /* Constant */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		A33582A31FC72EA700351795 /* AstroAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				A33582A41FC72EBD00351795 /* AstroAPIManager.swift */,
+			);
+			name = AstroAPIManager;
+			sourceTree = "<group>";
+		};
+		A342EAA11FCC1019005D962F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A342EAA71FCC1068005D962F /* StoryBaord */,
+				A342EAA21FCC101F005D962F /* ViewController */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		A342EAA21FCC101F005D962F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A342EAA71FCC1068005D962F /* StoryBaord */ = {
+			isa = PBXGroup;
+			children = (
+				A342EAA31FCC1047005D962F /* Login.storyboard */,
+			);
+			name = StoryBaord;
+			sourceTree = "<group>";
+		};
+		A3FD754F1FC6949400CAA4A6 = {
+			isa = PBXGroup;
+			children = (
+				A3FD755A1FC6949400CAA4A6 /* AstroAssignment */,
+				A3FD75721FC6949400CAA4A6 /* AstroAssignmentTests */,
+				A3FD757D1FC6949400CAA4A6 /* AstroAssignmentUITests */,
+				A3FD75591FC6949400CAA4A6 /* Products */,
+				A7F42A4C0BA78D041AE7DB67 /* Pods */,
+				75D1AF2DBB8B79CF17839DBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3FD75591FC6949400CAA4A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */,
+				A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */,
+				A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3FD755A1FC6949400CAA4A6 /* AstroAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				A33582A61FC758AA00351795 /* EventGridFlowLayout.swift */,
+				A33582A81FC758D000351795 /* EventListFlowLayout.swift */,
+				A335828B1FC728A000351795 /* StoryBaordHelper */,
+				A33582941FC72A3400351795 /* Source */,
+				A335829B1FC72B8F00351795 /* Utilities */,
+				A3FD755F1FC6949400CAA4A6 /* Main.storyboard */,
+				A3FD75651FC6949400CAA4A6 /* Assets.xcassets */,
+				A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */,
+				A3FD756A1FC6949400CAA4A6 /* Info.plist */,
+				A327F2C01FCB27E40062EF6D /* AstroAssignment.xcdatamodel */,
+			);
+			path = AstroAssignment;
+			sourceTree = "<group>";
+		};
+		A3FD75721FC6949400CAA4A6 /* AstroAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD75731FC6949400CAA4A6 /* AstroAssignmentTests.swift */,
+				A3FD75751FC6949400CAA4A6 /* Info.plist */,
+			);
+			path = AstroAssignmentTests;
+			sourceTree = "<group>";
+		};
+		A3FD757D1FC6949400CAA4A6 /* AstroAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3FD757E1FC6949400CAA4A6 /* AstroAssignmentUITests.swift */,
+				A3FD75801FC6949400CAA4A6 /* Info.plist */,
+			);
+			path = AstroAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		A7F42A4C0BA78D041AE7DB67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CD985D1BE77B17D4351778B /* Pods-AstroAssignment.debug.xcconfig */,
+				94BFCF962409A48EFAC7E70E /* Pods-AstroAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3FD75571FC6949400CAA4A6 /* AstroAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75831FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignment" */;
+			buildPhases = (
+				B829FE2EAEE3422090B7ED58 /* 📦 Check Pods Manifest.lock */,
+				A3FD75541FC6949400CAA4A6 /* Sources */,
+				A3FD75551FC6949400CAA4A6 /* Frameworks */,
+				A3FD75561FC6949400CAA4A6 /* Resources */,
+				6AF4558BA69073B5EF047494 /* 📦 Embed Pods Frameworks */,
+				1AC279E4F78FE8F54F0586F1 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroAssignment;
+			productName = AstroAssignment;
+			productReference = A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3FD756E1FC6949400CAA4A6 /* AstroAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75861FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentTests" */;
+			buildPhases = (
+				A3FD756B1FC6949400CAA4A6 /* Sources */,
+				A3FD756C1FC6949400CAA4A6 /* Frameworks */,
+				A3FD756D1FC6949400CAA4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FD75711FC6949400CAA4A6 /* PBXTargetDependency */,
+			);
+			name = AstroAssignmentTests;
+			productName = AstroAssignmentTests;
+			productReference = A3FD756F1FC6949400CAA4A6 /* AstroAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3FD75791FC6949400CAA4A6 /* AstroAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3FD75891FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentUITests" */;
+			buildPhases = (
+				A3FD75761FC6949400CAA4A6 /* Sources */,
+				A3FD75771FC6949400CAA4A6 /* Frameworks */,
+				A3FD75781FC6949400CAA4A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3FD757C1FC6949400CAA4A6 /* PBXTargetDependency */,
+			);
+			name = AstroAssignmentUITests;
+			productName = AstroAssignmentUITests;
+			productReference = A3FD757A1FC6949400CAA4A6 /* AstroAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3FD75501FC6949400CAA4A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Farooque;
+				TargetAttributes = {
+					A3FD75571FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					A3FD756E1FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3FD75571FC6949400CAA4A6;
+					};
+					A3FD75791FC6949400CAA4A6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A3FD75571FC6949400CAA4A6;
+					};
+				};
+			};
+			buildConfigurationList = A3FD75531FC6949400CAA4A6 /* Build configuration list for PBXProject "AstroAssignment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3FD754F1FC6949400CAA4A6;
+			productRefGroup = A3FD75591FC6949400CAA4A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3FD75571FC6949400CAA4A6 /* AstroAssignment */,
+				A3FD756E1FC6949400CAA4A6 /* AstroAssignmentTests */,
+				A3FD75791FC6949400CAA4A6 /* AstroAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3FD75561FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A342EAA41FCC1047005D962F /* Login.storyboard in Resources */,
+				A3FD75691FC6949400CAA4A6 /* LaunchScreen.storyboard in Resources */,
+				A3FD75661FC6949400CAA4A6 /* Assets.xcassets in Resources */,
+				A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756D1FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75781FC6949400CAA4A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AC279E4F78FE8F54F0586F1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AF4558BA69073B5EF047494 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroAssignment/Pods-AstroAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B829FE2EAEE3422090B7ED58 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3FD75541FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33582A91FC758D000351795 /* EventListFlowLayout.swift in Sources */,
+				A335829F1FC72CD000351795 /* AstroUtility.swift in Sources */,
+				A335829D1FC72C7600351795 /* AstroConstant.swift in Sources */,
+				A33582991FC72B0300351795 /* AstroChannelListModel.swift in Sources */,
+				A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */,
+				A33582A71FC758AA00351795 /* EventGridFlowLayout.swift in Sources */,
+				A335828A1FC7289B00351795 /* StoryboardHelper.swift in Sources */,
+				A3CD6DEF1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift in Sources */,
+				A33582911FC729D100351795 /* AstroChannelListViewModel.swift in Sources */,
+				A33582931FC72A1300351795 /* AstroChannelListCollectionViewCell.swift in Sources */,
+				A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */,
+				A33582A51FC72EBD00351795 /* AstroAPIManager.swift in Sources */,
+				A327F2C11FCB27E40062EF6D /* AstroAssignment.xcdatamodel in Sources */,
+				A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD756B1FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD75741FC6949400CAA4A6 /* AstroAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FD75761FC6949400CAA4A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3FD757F1FC6949400CAA4A6 /* AstroAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3FD75711FC6949400CAA4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FD75571FC6949400CAA4A6 /* AstroAssignment */;
+			targetProxy = A3FD75701FC6949400CAA4A6 /* PBXContainerItemProxy */;
+		};
+		A3FD757C1FC6949400CAA4A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3FD75571FC6949400CAA4A6 /* AstroAssignment */;
+			targetProxy = A3FD757B1FC6949400CAA4A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3FD755F1FC6949400CAA4A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FD75601FC6949400CAA4A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3FD75671FC6949400CAA4A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3FD75681FC6949400CAA4A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3FD75811FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3FD75821FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3FD75841FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD985D1BE77B17D4351778B /* Pods-AstroAssignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A3FD75851FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94BFCF962409A48EFAC7E70E /* Pods-AstroAssignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AstroAssignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A3FD75871FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment";
+			};
+			name = Debug;
+		};
+		A3FD75881FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AstroAssignmentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AstroAssignment.app/AstroAssignment";
+			};
+			name = Release;
+		};
+		A3FD758A1FC6949400CAA4A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AstroAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AstroAssignment;
+			};
+			name = Debug;
+		};
+		A3FD758B1FC6949400CAA4A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AstroAssignmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Farooque.AstroAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AstroAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3FD75531FC6949400CAA4A6 /* Build configuration list for PBXProject "AstroAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75811FC6949400CAA4A6 /* Debug */,
+				A3FD75821FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FD75831FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75841FC6949400CAA4A6 /* Debug */,
+				A3FD75851FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FD75861FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD75871FC6949400CAA4A6 /* Debug */,
+				A3FD75881FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3FD75891FC6949400CAA4A6 /* Build configuration list for PBXNativeTarget "AstroAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3FD758A1FC6949400CAA4A6 /* Debug */,
+				A3FD758B1FC6949400CAA4A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3FD75501FC6949400CAA4A6 /* Project object */;
+}
