@@ -9,7 +9,7 @@
 import UIKit
 
 class EventGridFlowLayout: UICollectionViewFlowLayout {
-    let itemHeight: CGFloat = 100
+    let itemHeight: CGFloat = 150
     override init() {
         super.init()
         setupLayout()

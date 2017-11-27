@@ -20,7 +20,6 @@
 		A33582A91FC758D000351795 /* EventListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33582A81FC758D000351795 /* EventListFlowLayout.swift */; };
 		A342EAA41FCC1047005D962F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A342EAA31FCC1047005D962F /* Login.storyboard */; };
 		A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */; };
-		A3CD6DEF1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */; };
 		A3FD755C1FC6949400CAA4A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */; };
 		A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */; };
 		A3FD75611FC6949400CAA4A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD755F1FC6949400CAA4A6 /* Main.storyboard */; };
@@ -63,7 +62,6 @@
 		A33582A81FC758D000351795 /* EventListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListFlowLayout.swift; sourceTree = "<group>"; };
 		A342EAA31FCC1047005D962F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A342EAA51FCC1060005D962F /* AstroFBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFBLoginViewController.swift; sourceTree = "<group>"; };
-		A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AstroFooterCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3FD75581FC6949400CAA4A6 /* AstroAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FD755B1FC6949400CAA4A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FD755D1FC6949400CAA4A6 /* AstroChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroChannelVC.swift; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				A33582921FC72A1300351795 /* AstroChannelListCollectionViewCell.swift */,
-				A3CD6DEE1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -501,7 +498,6 @@
 				A3FD755E1FC6949400CAA4A6 /* AstroChannelVC.swift in Sources */,
 				A33582A71FC758AA00351795 /* EventGridFlowLayout.swift in Sources */,
 				A335828A1FC7289B00351795 /* StoryboardHelper.swift in Sources */,
-				A3CD6DEF1FC88D7600BFE028 /* AstroFooterCollectionViewCell.swift in Sources */,
 				A33582911FC729D100351795 /* AstroChannelListViewModel.swift in Sources */,
 				A33582931FC72A1300351795 /* AstroChannelListCollectionViewCell.swift in Sources */,
 				A342EAA61FCC1060005D962F /* AstroFBLoginViewController.swift in Sources */,

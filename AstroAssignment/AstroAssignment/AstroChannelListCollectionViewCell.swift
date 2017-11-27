@@ -29,16 +29,17 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         channelTittle.text = model.channelTitle!
         
         if let number = model.channelStbNumber{
-        channelStbNumber.text = "\(number)"
+        channelStbNumber.text = "Channel No : \(number)"
         }
         
         
         if channelFavouritedList.count > 0 {
         for index in 0...channelFavouritedList.count-1 {
             let favouritedSection = channelFavouritedList[index]
-            let ind = favouritedSection.value(forKeyPath: "index") as? Int
+            let channelTittle = favouritedSection.value(forKeyPath: "channelTittle") as? String
+            let channelId = favouritedSection.value(forKeyPath: "channelId") as? Int
             
-            if (favouriteButton.tag == ind!){
+            if (channelTittle == model.channelTitle! && channelId == model.channelId!){
             favouriteButton.setImage(UIImage(named: "track"), for: UIControlState.normal)
                 break
             }
@@ -52,19 +53,20 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
    
     
     @IBAction func didTapFavouriteButton(_ sender: UIButton) {
-        
-        
+        if UserDefaults.standard.value(forKey: "id") != nil{
+        if sender.currentImage!.isEqual(UIImage(named: "unTracked")){
+                saveChannelList(model: channelListArray[sender.tag] , Index: sender.tag)
+                sender.setImage(UIImage(named: "track"), for: UIControlState.normal)
+            }
+            else{
+                removeChannelList(model: channelListArray[sender.tag])
+                sender.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
+            }
+        }
+        else{
         delegate?.presentLoginController()
-        
-//    if sender.currentImage!.isEqual(UIImage(named: "unTracked")){
-//          saveChannelList(model: channelListArray[sender.tag] , Index: sender.tag)
-//          sender.setImage(UIImage(named: "track"), for: UIControlState.normal)
-//        }
-//    else{
-//        removeChannelList(model: channelListArray[sender.tag])
-//        sender.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
-//        }
-    }
+        }
+}
     
     func saveChannelList(model : AstroChannelListModel , Index : Int ){
         guard let appDelegate =

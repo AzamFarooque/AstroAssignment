@@ -21,8 +21,11 @@ class AstroFBLoginViewController: UIViewController {
         loginButton.center = view.center
         view.addSubview(loginButton)
         
+       
         if let accessToken = FBSDKAccessToken.current(){
             getFBUserData()
+       
+           
         }
     }
     
@@ -46,8 +49,11 @@ class AstroFBLoginViewController: UIViewController {
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
                 if (error == nil){
                     self.dict = result as! [String : AnyObject]
-                    print(result!)
+                    //print(result!)
                     print(self.dict)
+                    
+               let id = self.dict["id"] as! String
+               UserDefaults.standard.set(id, forKey: "id")
                 }
             })
         }
