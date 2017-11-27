@@ -20,9 +20,6 @@ class AstroAPIManager : NSObject{
         guard let url = URL(string : baseURL+inUrl) else{
             print("Error Unwrapping URL");return
         }
-        
-        print(url)
-        
         let session = URLSession.shared
         let dataTask = session.dataTask(with: url) { (data , response , error) in
        

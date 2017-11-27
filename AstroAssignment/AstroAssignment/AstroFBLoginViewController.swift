@@ -16,20 +16,10 @@ class AstroFBLoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = view.center
-        view.addSubview(loginButton)
-        
-       
-        if let accessToken = FBSDKAccessToken.current(){
-            getFBUserData()
-       
-           
-        }
     }
     
-    @objc func loginButtonClicked() {
+    @IBAction func loginButtonClicked(_ sender: UIButton) {
+        if sender.titleLabel?.text == "Login"{
         let loginManager = LoginManager()
         loginManager.logIn([ .publicProfile ], viewController: self) { loginResult in
             switch loginResult {
@@ -37,11 +27,27 @@ class AstroFBLoginViewController: UIViewController {
                 print(error)
             case .cancelled:
                 print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
+            case .success:
+                sender.setTitle("Logout", for: .normal)
                 self.getFBUserData()
+              
             }
         }
     }
+        else{
+            UserDefaults.standard.removeObject(forKey: "id")
+            let loginManager = FBSDKLoginManager()
+            loginManager.logOut()
+            sender.setTitle("Login", for: .normal)
+        }
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if (FBSDKAccessToken.current()) != nil{
+            getFBUserData()
+        }
+    }
+    
     
     //function is fetching the user data
     func getFBUserData(){

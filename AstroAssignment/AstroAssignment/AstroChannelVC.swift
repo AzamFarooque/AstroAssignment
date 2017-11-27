@@ -13,7 +13,7 @@ import FBSDKLoginKit
 
 
 class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,AstroChannelListCellDelegate {
-    
+    var channelFavouritedList: [NSManagedObject] = []
     @IBOutlet weak var profileNameLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var listButton: UIButton!
@@ -34,7 +34,6 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         fetcData(sort: "SortChannelID")
         headerView.addShadow()
         setupInitialLayout()
-     
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,7 +47,6 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             profileNameLabel.isHidden = true
             logoutButton.isHidden = true
         }
-
     }
        
     @IBAction func changeSegmentIndex(_ sender: UISegmentedControl) {
@@ -56,10 +54,8 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             channelList.dataSource.removeAll()
             channelList.channelTittleArray.removeAll()
             fetcData(sort: "SortChannelID")
-           
         }
         if sender.selectedSegmentIndex == 1{
-
             channelList.dataSource.removeAll()
             fetcData(sort: "SortChannelAlphabet")
         }
@@ -67,7 +63,6 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     func fetcData(sort : String){
         self.collectionView.showLoadingIndicator()
-      //  segmentControl.setEnabled(true, forSegmentAt: 0)
         channelList.fetchSearchResult(url :"/ams/v3/getChannelList") { (success, error) in
             if success {
              if sort == "SortChannelID"{
@@ -82,6 +77,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
                     self.collectionView.hideLoadingIndicator()
                 }
             } else if error != nil {
+                print("Eroor")
             }
         }
 
@@ -164,5 +160,27 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         loginManager.logOut()
         logoutButton.isHidden = true
         profileNameLabel.isHidden = true
+        delete()
+        fetcData(sort: "SortChannelID")
+    }
+    
+    
+    func delete(){
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Channel")
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
+        
+        do {
+            try context.execute(deleteRequest)
+            try context.save()
+        } catch {
+            print ("There was an error")
+        }
     }
 }

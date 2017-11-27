@@ -25,7 +25,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
    
     func update(model : AstroChannelListModel , buttonTag : Int){
         fetchFavouritedChannelList()
-        
+               
         channelTittle.text = model.channelTitle!
         
         if let number = model.channelStbNumber{

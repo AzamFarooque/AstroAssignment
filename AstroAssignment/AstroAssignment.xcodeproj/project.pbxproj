@@ -160,7 +160,6 @@
 			children = (
 				A33582A31FC72EA700351795 /* AstroAPIManager */,
 				A335828C1FC728B400351795 /* AppDelegate */,
-				A342EAA11FCC1019005D962F /* Login */,
 				A33582951FC72A7200351795 /* Root */,
 			);
 			name = Source;
@@ -169,6 +168,7 @@
 		A33582951FC72A7200351795 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				A342EAA11FCC1019005D962F /* Login */,
 				A33582961FC72ABB00351795 /* ChannelList */,
 			);
 			name = Root;
