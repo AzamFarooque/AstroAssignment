@@ -31,12 +31,14 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         if let number = model.channelStbNumber{
         channelStbNumber.text = "Channel No : \(number)"
         }
+        if channelFavouritedList.count == 0{
+        favouriteButton.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
+        }
         
         
         if channelFavouritedList.count > 0 {
         for index in 0...channelFavouritedList.count-1 {
             let favouritedSection = channelFavouritedList[index]
-            let ind = favouritedSection.value(forKeyPath: "index") as? Int
             let channelTittle = favouritedSection.value(forKeyPath: "channelTittle") as? String
             let channelId = favouritedSection.value(forKeyPath: "channelId") as? Int
             

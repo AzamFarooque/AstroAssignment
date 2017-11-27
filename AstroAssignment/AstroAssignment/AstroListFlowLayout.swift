@@ -1,8 +1,8 @@
 //
-//  EventListFlowLayout.swift
-//  EventTracker
+//  AstroListFlowLayout.swift
+//  AstroAssignment
 //
-//  Created by Farooque on 02/04/17.
+//  Created by Farooque on 23/11/17.
 //  Copyright © 2017 Farooque. All rights reserved.
 //
 

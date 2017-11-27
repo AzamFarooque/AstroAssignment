@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiB-Ge-ONN">
-                                <rect key="frame" x="40" y="305" width="295" height="30"/>
+                                <rect key="frame" x="40" y="318.5" width="295" height="30"/>
                                 <color key="backgroundColor" red="0.26666666666666666" green="0.40784313725490196" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UvG-M4-2n9"/>
@@ -54,16 +54,28 @@
                                     <action selector="loginButtonClicked:" destination="GZQ-Pa-YLe" eventType="touchUpInside" id="kfx-1h-CUN"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login With Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42k-zp-aHM">
+                                <rect key="frame" x="40" y="274" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="H9G-ac-F8s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" red="0.92156862745098034" green="0.20392156862745098" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="42k-zp-aHM" firstAttribute="leading" secondItem="lZZ-BQ-dfR" secondAttribute="leading" constant="40" id="FRM-Ll-LgN"/>
                             <constraint firstItem="wXq-P7-SGp" firstAttribute="top" secondItem="0XU-v6-5Zk" secondAttribute="bottom" constant="30" id="IGk-pz-EIw"/>
+                            <constraint firstItem="eiB-Ge-ONN" firstAttribute="top" secondItem="42k-zp-aHM" secondAttribute="bottom" constant="23.5" id="J1X-Cl-Uqw"/>
                             <constraint firstItem="eiB-Ge-ONN" firstAttribute="leading" secondItem="lZZ-BQ-dfR" secondAttribute="leading" constant="40" id="NW2-80-MCZ"/>
-                            <constraint firstItem="eiB-Ge-ONN" firstAttribute="top" secondItem="tQX-pF-Nbu" secondAttribute="bottom" constant="137" id="T0A-ZN-UKw"/>
+                            <constraint firstItem="eiB-Ge-ONN" firstAttribute="centerY" secondItem="lZZ-BQ-dfR" secondAttribute="centerY" id="RZl-Pm-XIZ"/>
                             <constraint firstItem="tQX-pF-Nbu" firstAttribute="centerX" secondItem="lZZ-BQ-dfR" secondAttribute="centerX" id="WG7-nk-WHJ"/>
                             <constraint firstItem="wXq-P7-SGp" firstAttribute="leading" secondItem="lZZ-BQ-dfR" secondAttribute="leading" constant="30" id="XcU-ea-VlZ"/>
                             <constraint firstItem="tQX-pF-Nbu" firstAttribute="top" secondItem="wXq-P7-SGp" secondAttribute="bottom" constant="48" id="egd-59-4R8"/>
                             <constraint firstAttribute="trailing" secondItem="eiB-Ge-ONN" secondAttribute="trailing" constant="40" id="exI-lV-Psm"/>
+                            <constraint firstAttribute="trailing" secondItem="42k-zp-aHM" secondAttribute="trailing" constant="40" id="kXu-NT-LKa"/>
                         </constraints>
                     </view>
                 </viewController>

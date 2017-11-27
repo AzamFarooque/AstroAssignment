@@ -1,9 +1,9 @@
 //
 //  UIView.swift
-//  MyHealthPatient
+//  AstroAssignment
 //
-//  Created by Ashwini on 27/02/17.
-//  Copyright © 2017 Ashwini. All rights reserved.
+//  Created by Farooque on 23/11/17.
+//  Copyright © 2017 Farooque. All rights reserved.
 //
 
 import UIKit
