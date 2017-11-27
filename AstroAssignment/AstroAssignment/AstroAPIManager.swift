@@ -37,7 +37,9 @@ class AstroAPIManager : NSObject{
                        
                        
                         let modelArray = self.mapDataToModel(channelList: apps as NSArray)
+                         DispatchQueue.main.async {
                             onCompletion(modelArray,nil)
+                        }
                         }
                 }
             }

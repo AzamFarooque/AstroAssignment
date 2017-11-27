@@ -17,7 +17,7 @@ class AstroChannelListModel: NSObject {
     init(dictionary : [String : AnyObject]){
     self.channelId = dictionary["channelId"] as? Int
     self.channelTitle = dictionary["channelTitle"] as? String
-    self.channelId = dictionary["channelStbNumber"] as? Int
+    self.channelStbNumber = dictionary["channelStbNumber"] as? Int
 
     }
 }
