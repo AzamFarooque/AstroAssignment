@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct AstroConstant {
+    
+    static let channelListURL = "/ams/v3/getChannelList"
+    static let sortByChannelID = "SortChannelID"
+    static let sortByChannelName = "SortChannelAlphabet"
+}
+

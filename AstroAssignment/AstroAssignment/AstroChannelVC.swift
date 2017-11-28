@@ -31,7 +31,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetcData(sort: "SortChannelID")
+        fetcData(sort: AstroConstant.sortByChannelID)
         headerView.addShadow()
         setupInitialLayout()
     }
@@ -57,11 +57,11 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         if sender.selectedSegmentIndex == 0{
             channelList.dataSource.removeAll()
             channelList.channelTittleArray.removeAll()
-            fetcData(sort: "SortChannelID")
+            fetcData(sort: AstroConstant.sortByChannelID)
         }
         if sender.selectedSegmentIndex == 1{
             channelList.dataSource.removeAll()
-            fetcData(sort: "SortChannelAlphabet")
+            fetcData(sort: AstroConstant.sortByChannelName)
         }
     }
     
@@ -69,7 +69,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     func fetcData(sort : String){
         self.collectionView.showLoadingIndicator()
-        channelList.fetchSearchResult(url :"/ams/v3/getChannelList") { (success, error) in
+        channelList.fetchSearchResult(url :AstroConstant.channelListURL) { (success, error) in
             if success {
                 if sort == "SortChannelID"{
                     self.channelList.sort()
@@ -169,12 +169,12 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         loginManager.logOut()
         logoutButton.isHidden = true
         profileNameLabel.isHidden = true
-        delete()
-        fetcData(sort: "SortChannelID")
+        deleteFavouritedChannelList()
+        fetcData(sort: AstroConstant.sortByChannelID)
     }
     
     
-    func delete(){
+    func deleteFavouritedChannelList(){
         guard let appDelegate =
             UIApplication.shared.delegate as? AppDelegate else {
                 return
