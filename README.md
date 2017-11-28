@@ -11,4 +11,6 @@ Xcode 8
 
 Facebook Login SDK
 
+# Sample Images
 
+/Users/farooque/Desktop/Screen Shot 2017-11-28 at 11.45.16 AM.png
