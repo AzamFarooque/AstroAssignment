@@ -29,7 +29,7 @@ class AstroChannelListViewModel {
     }
     
     // Pragma MARK : Sort By Channel Name
-    func sortByAlbhabet(){
+    func sortByChannelName(){
         for index in 0...dataSource.count-1{
             let section : AstroChannelListModel = self.dataSource[index]
             self.channelTittleArray += [section.channelTitle!]
@@ -49,7 +49,7 @@ class AstroChannelListViewModel {
     }
     
     // Pragma MARK : Sort By Channel Number
-    func sort(){
+    func sortByChannelID(){
         for _ in 0...dataSource.count-1{
             for j in 1...dataSource.count - 1{
                 let section = self.dataSource[j-1]

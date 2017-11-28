@@ -71,10 +71,10 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         channelListViewModel.fetchChannel(url :AstroConstant.channelListURL) { (success, error) in
             if success {
                 if sort == "SortChannelID"{
-                    self.channelListViewModel.sort()
+                    self.channelListViewModel.sortByChannelID()
                 }
                 else{
-                    self.channelListViewModel.sortByAlbhabet()
+                    self.channelListViewModel.sortByChannelName()
                 }
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
