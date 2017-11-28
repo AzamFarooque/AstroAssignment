@@ -22,26 +22,26 @@ class AstroAPIManager : NSObject{
         }
         let session = URLSession.shared
         let dataTask = session.dataTask(with: url) { (data , response , error) in
-       
+            
             guard let unwrappedData = data else { print("Eroor getting data");return}
-           
+            
             do{
                 if let responseJSON = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments) as? NSDictionary{
                     if let apps = responseJSON.value(forKeyPath: "channels") as? [NSDictionary] {
                         let modelArray = self.mapDataToModel(channelList: apps as NSArray)
-                         DispatchQueue.main.async {
+                        DispatchQueue.main.async {
                             onCompletion(modelArray,nil)
                         }
-                        }
+                    }
                 }
             }
             catch{
                 onCompletion(nil,nil)
                 print("Eroor getting API data : \(error.localizedDescription)")
-         }
-     }
+            }
+        }
         dataTask.resume()
-   }
+    }
     
     private func mapDataToModel (channelList : NSArray)-> NSArray {
         let modelArray:NSMutableArray=NSMutableArray()

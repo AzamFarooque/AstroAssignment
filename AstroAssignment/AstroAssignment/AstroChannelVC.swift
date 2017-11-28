@@ -71,13 +71,13 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         self.collectionView.showLoadingIndicator()
         channelList.fetchSearchResult(url :"/ams/v3/getChannelList") { (success, error) in
             if success {
-             if sort == "SortChannelID"{
-            self.channelList.sort()
+                if sort == "SortChannelID"{
+                    self.channelList.sort()
                 }
-             else{
-            self.channelList.sortByAlbhabet()
+                else{
+                    self.channelList.sortByAlbhabet()
                 }
-            self.channelListArray = self.channelList.dataSource
+                self.channelListArray = self.channelList.dataSource
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                     self.collectionView.hideLoadingIndicator()
@@ -86,34 +86,34 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
                 print("Eroor")
             }
         }
-
+        
     }
     
     // Pragma MARK : setupInitialLayout
-
+    
     func setupInitialLayout() {
         isGridFlowLayoutUsed = true
         collectionView.collectionViewLayout = gridFlowLayout
     }
-
-     // Pragm MARK: UICollectionViewDataSource
     
-         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-            return channelListArray.count == 0 ? 0 :channelListArray.count
-        }
+    // Pragm MARK: UICollectionViewDataSource
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return channelListArray.count == 0 ? 0 :channelListArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseidentifer, for: indexPath) as! AstroChannelListCollectionViewCell
-         let section = self.channelListArray[indexPath.row] as AstroChannelListModel!
-            cell.addShadow()
-            cell.backgroundColor = UIColor.white
-            cell.favouriteButton.tag = indexPath.row
-            cell.update(model : section! , buttonTag : indexPath.row)
-            cell.delegate = self
-            cell.channelListArray = channelList.dataSource
-            return cell
-        }
+        let section = self.channelListArray[indexPath.row] as AstroChannelListModel!
+        cell.addShadow()
+        cell.backgroundColor = UIColor.white
+        cell.favouriteButton.tag = indexPath.row
+        cell.update(model : section! , buttonTag : indexPath.row)
+        cell.delegate = self
+        cell.channelListArray = channelList.dataSource
+        return cell
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -123,11 +123,11 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     // Pragm MARK: presentLoginController
     
     func presentLoginController(){
-    let storyboard = UIStoryboard(storyboard: .Login)
-    let subsectionVC : AstroFBLoginViewController = storyboard.instantiateViewController()
-    navController = UINavigationController(rootViewController: subsectionVC)
-    navController.isNavigationBarHidden = true
-    self.present(navController, animated:true, completion: nil)
+        let storyboard = UIStoryboard(storyboard: .Login)
+        let subsectionVC : AstroFBLoginViewController = storyboard.instantiateViewController()
+        navController = UINavigationController(rootViewController: subsectionVC)
+        navController.isNavigationBarHidden = true
+        self.present(navController, animated:true, completion: nil)
     }
     
     // Pragm MARK: GridLayout
@@ -147,12 +147,12 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         isGridFlowLayoutUsed = false
         collectionView.collectionViewLayout = listFlowLayout
     }
-
+    
     // Pragm MARK: LogoutButton Action
     
     @IBAction func didTapLogoutButton(_ sender: Any) {
         confirmLogout()
-           }
+    }
     
     func confirmLogout(){
         let alertController: UIAlertController = UIAlertController(title: "Astro", message:"Are you sure you want to logout", preferredStyle: .alert)
@@ -197,5 +197,5 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         super.didReceiveMemoryWarning()
         
     }
-
+    
 }

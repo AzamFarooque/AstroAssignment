@@ -10,24 +10,23 @@ import Foundation
 
 typealias onCompletion = (Bool, String?) -> Void
 class AstroChannelListViewModel {
-var dataSource : [AstroChannelListModel] = []
-var channelTittleArray : [String] = []
-var temp : AstroChannelListModel!
+    var dataSource : [AstroChannelListModel] = []
+    var channelTittleArray : [String] = []
+    var temp : AstroChannelListModel!
     
-func fetchSearchResult(url : String,completionBlock : @escaping onCompletion){
-    
-    AstroAPIManager.sharedAstroAPIManager.request(inUrl: url) { (data, error) in
-        if error == nil {
-              if let channeList = data  {
-                self.dataSource = channeList as! [AstroChannelListModel]
-                completionBlock(true , nil)
+    func fetchSearchResult(url : String,completionBlock : @escaping onCompletion){
+        
+        AstroAPIManager.sharedAstroAPIManager.request(inUrl: url) { (data, error) in
+            if error == nil {
+                if let channeList = data  {
+                    self.dataSource = channeList as! [AstroChannelListModel]
+                    completionBlock(true , nil)
+                }
+            } else {
+                completionBlock(true , error)
             }
-        } else {
-            completionBlock(true , error)
         }
     }
-}
-    
     
     // Pragma MARK : Sort By Channel Name
     func sortByAlbhabet(){
