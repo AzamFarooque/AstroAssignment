@@ -21,7 +21,6 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBOutlet weak var segmentControl: UISegmentedControl!
     var navController : UINavigationController!
     let channelList : AstroChannelListViewModel = AstroChannelListViewModel()
-    var channelListArray :  [AstroChannelListModel] = []
     @IBOutlet weak var headerView: UIView!
     let gridFlowLayout = AstroGridFlowLayout()
     let listFlowLayout = AstroListFlowLayout()
@@ -77,7 +76,6 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
                 else{
                     self.channelList.sortByAlbhabet()
                 }
-                self.channelListArray = self.channelList.dataSource
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
                     self.collectionView.hideLoadingIndicator()
@@ -99,17 +97,17 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     // Pragm MARK: UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return channelListArray.count == 0 ? 0 :channelListArray.count
+        return channelList.dataSource.count == 0 ? 0 :channelList.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseidentifer, for: indexPath) as! AstroChannelListCollectionViewCell
-        let section = self.channelListArray[indexPath.row] as AstroChannelListModel!
+        let section = self.channelList.dataSource[indexPath.row]
         cell.addShadow()
         cell.backgroundColor = UIColor.white
         cell.favouriteButton.tag = indexPath.row
-        cell.update(model : section! , buttonTag : indexPath.row)
+        cell.update(model : section , buttonTag : indexPath.row)
         cell.delegate = self
         cell.channelListArray = channelList.dataSource
         return cell
