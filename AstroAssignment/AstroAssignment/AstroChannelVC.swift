@@ -69,7 +69,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     func fetcData(sort : String){
         self.collectionView.showLoadingIndicator()
-        channelList.fetchSearchResult(url :AstroConstant.channelListURL) { (success, error) in
+        channelList.fetchChannel(url :AstroConstant.channelListURL) { (success, error) in
             if success {
                 if sort == "SortChannelID"{
                     self.channelList.sort()

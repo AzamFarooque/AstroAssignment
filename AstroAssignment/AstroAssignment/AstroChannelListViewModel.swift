@@ -14,7 +14,7 @@ class AstroChannelListViewModel {
     var channelTittleArray : [String] = []
     var temp : AstroChannelListModel!
     
-    func fetchSearchResult(url : String,completionBlock : @escaping onCompletion){
+    func fetchChannel(url : String,completionBlock : @escaping onCompletion){
         
         AstroAPIManager.sharedAstroAPIManager.request(inUrl: url) { (data, error) in
             if error == nil {
