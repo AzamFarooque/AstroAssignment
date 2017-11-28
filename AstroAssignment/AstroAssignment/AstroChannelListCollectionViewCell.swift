@@ -33,14 +33,17 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         if channelFavouritedList.count == 0{
             favouriteButton.setImage(UIImage(named: "unTracked"), for: UIControlState.normal)
         }
-        
-        
+        checkForFavourite(model : model)
+    }
+    
+    // Pragma MARK : Check For Favourite
+    
+    func checkForFavourite(model : AstroChannelListModel){
         if channelFavouritedList.count > 0 {
             for index in 0...channelFavouritedList.count-1 {
                 let favouritedSection = channelFavouritedList[index]
                 let channelTittle = favouritedSection.value(forKeyPath: "channelTittle") as? String
                 let channelId = favouritedSection.value(forKeyPath: "channelId") as? Int
-                
                 if (channelTittle == model.channelTitle! && channelId == model.channelId!){
                     favouriteButton.setImage(UIImage(named: "track"), for: UIControlState.normal)
                     break

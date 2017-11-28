@@ -59,6 +59,7 @@ class AstroFBLoginViewController: UIViewController {
                     let name = self.dict["name"] as! String
                     UserDefaults.standard.set(id, forKey: "id")
                     UserDefaults.standard.set(name, forKey: "name")
+                    
                 }
             })
         }
