@@ -11,12 +11,17 @@ import FacebookLogin
 import FBSDKLoginKit
 
 class AstroFBLoginViewController: UIViewController {
-
     var dict : [String : AnyObject]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (FBSDKAccessToken.current()) != nil{
+            getFBUserData()
+        }
+
     }
+    // Pragma MARK : Facebook Login Button Action
     
     @IBAction func loginButtonClicked(_ sender: UIButton) {
         if sender.titleLabel?.text == "Login"{
@@ -42,14 +47,9 @@ class AstroFBLoginViewController: UIViewController {
         }
 
     }
-    override func viewWillAppear(_ animated: Bool) {
-        if (FBSDKAccessToken.current()) != nil{
-            getFBUserData()
-        }
-    }
     
+    // Pragma Mark : Function is fetching the user data
     
-    //function is fetching the user data
     func getFBUserData(){
         if((FBSDKAccessToken.current()) != nil){
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
@@ -64,12 +64,14 @@ class AstroFBLoginViewController: UIViewController {
         }
     }
 
+    // Pragma MARK : Back Buttton Action
+    
     @IBAction func didTapSkipButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
        
     }
-    
 }

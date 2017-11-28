@@ -19,15 +19,14 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var favouriteButton: UIButton!
     var channelListArray :  [AstroChannelListModel] = []
     var channelFavouritedList: [NSManagedObject] = []
-    
     weak var delegate : AstroChannelListCellDelegate?
 
-   
+   // Pragma MARK : Update CollectionView Cell
+    
     func update(model : AstroChannelListModel , buttonTag : Int){
         fetchFavouritedChannelList()
                
         channelTittle.text = model.channelTitle!
-        
         if let number = model.channelStbNumber{
         channelStbNumber.text = "Channel No : \(number)"
         }
@@ -53,7 +52,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         }
     }
     
-   
+   // Pragma MARK : Favourite Button Action
     
     @IBAction func didTapFavouriteButton(_ sender: UIButton) {
         if UserDefaults.standard.value(forKey: "id") != nil{
@@ -70,6 +69,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
         delegate?.presentLoginController()
         }
 }
+    // Pragma MARK : Save Channel List in Core Data
     
     func saveChannelList(model : AstroChannelListModel , Index : Int ){
         guard let appDelegate =
@@ -94,6 +94,7 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
+    // Pragma MARK : Fetching Favourited Channel List
     
     func fetchFavouritedChannelList(){
         guard let appDelegate =
@@ -110,6 +111,8 @@ class AstroChannelListCollectionViewCell: UICollectionViewCell {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
+    
+    // Pragma MARK : Remove Favourited Channel List
     
      func removeChannelList(model : AstroChannelListModel){
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {

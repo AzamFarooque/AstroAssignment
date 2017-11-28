@@ -27,12 +27,7 @@ class AstroAPIManager : NSObject{
            
             do{
                 if let responseJSON = try JSONSerialization.jsonObject(with: unwrappedData, options: .allowFragments) as? NSDictionary{
-                    
-                   
-                    
                     if let apps = responseJSON.value(forKeyPath: "channels") as? [NSDictionary] {
-                       
-                       
                         let modelArray = self.mapDataToModel(channelList: apps as NSArray)
                          DispatchQueue.main.async {
                             onCompletion(modelArray,nil)

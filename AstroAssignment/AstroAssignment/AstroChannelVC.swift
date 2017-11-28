@@ -36,6 +36,8 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         setupInitialLayout()
     }
     
+    // Pragma MARK : ViewDidAppear
+    
     override func viewDidAppear(_ animated: Bool) {
         if UserDefaults.standard.value(forKey: "id") != nil{
             profileNameLabel.isHidden = false
@@ -48,7 +50,9 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             logoutButton.isHidden = true
         }
     }
-       
+    
+    // Pragma MARK : Sort by Channel id or Channel name
+    
     @IBAction func changeSegmentIndex(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
             channelList.dataSource.removeAll()
@@ -60,6 +64,8 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             fetcData(sort: "SortChannelAlphabet")
         }
     }
+    
+    // Pragma MARK : Fetch Channel List
     
     func fetcData(sort : String){
         self.collectionView.showLoadingIndicator()
@@ -83,14 +89,14 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
 
     }
     
+    // Pragma MARK : setupInitialLayout
 
     func setupInitialLayout() {
         isGridFlowLayoutUsed = true
         collectionView.collectionViewLayout = gridFlowLayout
     }
 
-    // MARK: UICollectionViewDataSource
-    
+     // Pragm MARK: UICollectionViewDataSource
     
          func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return channelListArray.count == 0 ? 0 :channelListArray.count
@@ -114,18 +120,18 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         return UIEdgeInsetsMake(2, 0, 0, 0)
     }
     
+    // Pragm MARK: presentLoginController
+    
     func presentLoginController(){
     let storyboard = UIStoryboard(storyboard: .Login)
     let subsectionVC : AstroFBLoginViewController = storyboard.instantiateViewController()
-    navController = UINavigationController(rootViewController: subsectionVC) // Creating a
+    navController = UINavigationController(rootViewController: subsectionVC)
     navController.isNavigationBarHidden = true
     self.present(navController, animated:true, completion: nil)
     }
-       override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
-
+    
+    // Pragm MARK: GridLayout
+    
     @IBAction func didTapGridLayout(_ sender: UIButton) {
         gridButton.setImage(UIImage(named: "selectedGrid"), for: UIControlState.normal)
         listButton.setImage(UIImage(named: "unselectedList"), for: UIControlState.normal)
@@ -133,6 +139,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         collectionView.collectionViewLayout = gridFlowLayout
     }
     
+    // Pragm MARK: ListLAyout
     
     @IBAction func didTapListLAyout(_ sender: UIButton) {
         gridButton.setImage(UIImage(named: "unselectedGrid"), for: UIControlState.normal)
@@ -141,6 +148,8 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
         collectionView.collectionViewLayout = listFlowLayout
     }
 
+    // Pragm MARK: LogoutButton Action
+    
     @IBAction func didTapLogoutButton(_ sender: Any) {
         confirmLogout()
            }
@@ -183,4 +192,10 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
             print ("There was an error")
         }
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
+
 }
