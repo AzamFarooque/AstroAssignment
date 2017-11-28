@@ -20,7 +20,7 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     @IBOutlet weak var gridButton: UIButton!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     var navController : UINavigationController!
-    let channelList : AstroChannelListViewModel = AstroChannelListViewModel()
+    let channelListViewModel : AstroChannelListViewModel = AstroChannelListViewModel()
     @IBOutlet weak var headerView: UIView!
     let gridFlowLayout = AstroGridFlowLayout()
     let listFlowLayout = AstroListFlowLayout()
@@ -54,12 +54,12 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     @IBAction func changeSegmentIndex(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0{
-            channelList.dataSource.removeAll()
-            channelList.channelTittleArray.removeAll()
+            channelListViewModel.dataSource.removeAll()
+            channelListViewModel.channelTittleArray.removeAll()
             fetcData(sort: AstroConstant.sortByChannelID)
         }
         if sender.selectedSegmentIndex == 1{
-            channelList.dataSource.removeAll()
+            channelListViewModel.dataSource.removeAll()
             fetcData(sort: AstroConstant.sortByChannelName)
         }
     }
@@ -68,13 +68,13 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     
     func fetcData(sort : String){
         self.collectionView.showLoadingIndicator()
-        channelList.fetchChannel(url :AstroConstant.channelListURL) { (success, error) in
+        channelListViewModel.fetchChannel(url :AstroConstant.channelListURL) { (success, error) in
             if success {
                 if sort == "SortChannelID"{
-                    self.channelList.sort()
+                    self.channelListViewModel.sort()
                 }
                 else{
-                    self.channelList.sortByAlbhabet()
+                    self.channelListViewModel.sortByAlbhabet()
                 }
                 DispatchQueue.main.async {
                     self.collectionView.reloadData()
@@ -97,19 +97,19 @@ class AstroChannelVC: UIViewController,UICollectionViewDelegate,UICollectionView
     // Pragm MARK: UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return channelList.dataSource.count == 0 ? 0 :channelList.dataSource.count
+        return channelListViewModel.dataSource.count == 0 ? 0 :channelListViewModel.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseidentifer, for: indexPath) as! AstroChannelListCollectionViewCell
-        let section = self.channelList.dataSource[indexPath.row]
+        let section = self.channelListViewModel.dataSource[indexPath.row]
         cell.addShadow()
         cell.backgroundColor = UIColor.white
         cell.favouriteButton.tag = indexPath.row
         cell.update(model : section , buttonTag : indexPath.row)
         cell.delegate = self
-        cell.channelListArray = channelList.dataSource
+        cell.channelListArray = channelListViewModel.dataSource
         return cell
     }
     
