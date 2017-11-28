@@ -4,13 +4,13 @@
 
 # Requirement
 
-iOS 9.0+                                        
-Xcode 8
+iOS 10.0+                                        
+Xcode 8.3.3
 
 # Built With
 
 Facebook Login SDK
 
 # Sample Images
-
+![ScreenShot](/Users/farooque/Desktop/Screen Shot 2017-11-28 at 11.45.16 AM.png)
 ![ScreenShot](http://i64.tinypic.com/mv3lzl.png)
